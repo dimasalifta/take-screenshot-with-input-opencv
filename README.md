@@ -8,6 +8,10 @@ sesuaikan dengan gamenya, apabila ingin mengambil dataset game p9-12d maka jalan
 ````
 python3 .\take_game_p9.py --folder_name=x0_y0 --camera=0 
 ````
--folder_name=[isikan nama dari foto yang akan di simpan] contoh x0_y1, x0_y2 dan seterusnya
+-folder_name=[isikan nama folder dari foto yang akan di simpan] contoh x0_y1, x0_y2 dan seterusnya
 
--camera=[isikan dengan device id kamera] index dimulai dari 0, 1, 2, 3 dan seterusnya.
+-camera=[isikan dengan device id kamera yang digunakan] index dimulai dari 0, 1, 2, 3 dan seterusnya. 
+cara cek index kamera dengan menggunakan v4l2-utils
+```
+v4l2-ctl --list-devices
+```
